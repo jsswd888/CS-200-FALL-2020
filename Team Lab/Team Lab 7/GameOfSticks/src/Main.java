@@ -1,0 +1,68 @@
+//TEAM LAB 7 EXERCISE A & B 
+
+import java.util.Random;
+
+public class Main{
+    public static void main(String[] args) {
+        Q1();
+         
+        Q2();
+    }
+
+    public static void Q1 (){
+        System.out.println("Q1: ");
+        char [] letters1 = {'a','b','c'};
+        char [] letters2 = {'d','e'};
+
+        char [] holder = letters1;
+        letters1 = letters2;
+        letters2 = holder;
+        holder[2] = 'f';
+
+        for (int i = 0; i < letters1.length; i++){
+            System.out.print(letters1[i]);
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < letters2.length; i++){
+            System.out.print(letters2[i]);
+        }
+
+        System.out.println();
+    }
+
+    public static void Q2(){
+        System.out.println("Q2: ");
+        Random rand = new Random();
+        int [] list = new int[4];
+
+        for (int i = 0; i < list.length; i++){
+            list[i] = rand.nextInt(10);
+        }
+
+        for (int i = 0; i < list.length; i++){
+            System.out.print(list[i]);
+        }
+
+        System.out.println();
+
+        int sum = 0;
+        for (int i = 0; i < list.length; i++){
+            sum += list[i];
+        }
+        System.out.println("sum: " + sum);
+
+        for (int i = 0; i < list.length / 2; i++){
+            int holder = list[i];
+            list[i] = list[list.length - 1 - i];
+            list[list.length - 1 - i] = holder;
+        }
+
+        for (int i = 0; i < list.length; i++){
+            System.out.print(list[i]);
+        }
+
+        System.out.println();
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="5.16 Hello IDE/src"/>
+	<classpathentry kind="src" path="5.18 Guessing Game/src"/>
+	<classpathentry kind="src" path="5.20 RockPaperScissors/src"/>
+	<classpathentry kind="src" path="5.24 Rectangles sizes/src"/>
+	<classpathentry kind="src" path="Style and Comment/src"/>
+	<classpathentry kind="output" path="5.16 Hello IDE/bin"/>
+</classpath>
